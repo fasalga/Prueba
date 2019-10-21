@@ -1,0 +1,38 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // Your code here!
+        
+        System.out.println("Hola, este es mi ajadrez");
+        
+        // Función para pintar el Ajedrez
+        
+        PintarTablero();
+    }
+    
+    private static void PintarTablero() {
+        System.out.println("╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
+        System.out.println("╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝");
+
+
+        
+    }
+}
