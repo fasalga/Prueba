@@ -4,35 +4,109 @@ public class Main {
     public static void main(String[] args) throws Exception {
         // Your code here!
         
-        System.out.println("Hola, este es mi ajadrez");
+        System.out.println("---------- Bienvenido al juego más increíble de ajadrez ----------\n");
         
         // Función para pintar el Ajedrez
         
         PintarTablero();
+        
+        // Esto se itera hasta el final 
+        Movimiento();
+        
+        PintarTablero();
+
+        String varTexto;
+        varTexto = Colorear("TextoRojo","Rojo");
+        System.out.println(varTexto);
+        
+        System.out.println("\033[33m Este texto saldrá en amarillo");
+        
+        PruebaColor();
+        
+        
     }
     
     private static void PintarTablero() {
-        System.out.println("╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
-        System.out.println("║   ║   ║   ║   ║   ║   ║   ║   ║");
-        System.out.println("╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝");
+        System.out.println("    A   B   C   D   E   F   G   H ");
+        System.out.println("  ╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗");
+        System.out.println("1 ║░T░║ C ║░A░║ R ║░Q░║ A ║░C░║ T ║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("2 ║ P ║░P░║ P ║░P░║ P ║░P░║ P ║░P░║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("3 ║░░░║   ║░░░║   ║░░░║   ║░░░║   ║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("4 ║   ║░░░║   ║░░░║   ║░░░║   ║░░░║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("5 ║░░░║   ║░░░║   ║░░░║   ║░░░║   ║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("6 ║   ║░░░║   ║░░░║   ║░░░║   ║░░░║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("7 ║░P░║ P ║░P░║ P ║░P░║ P ║░P░║ P ║");
+        System.out.println("  ║═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══║");
+        System.out.println("8 ║ T ║░C░║ A ║░R░║ Q ║░A░║ C ║░T░║");
+        System.out.println("  ╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝");
 
+    }
 
+    
+    private static void Movimiento() {
+            
+        System.out.println("Coordenada de la ficha a mover: ");
+
+        System.out.println("Hasta donde? :");
+
+    }   
+    
+    
+    public static void PruebaColor() { 
+       String black="\033[30m"; 
+       String red="\033[31m"; 
+       String green="\033[32m"; 
+       String yellow="\033[33m"; 
+       String blue="\033[34m"; 
+       String purple="\033[35m"; 
+       String cyan="\033[36m"; 
+       String white="\033[37m"; 
+       String reset="\u001B[0m";
+       System.out.println(); 
+       System.out.println(red+"Cadena de texto en rojo"+reset); 
+       System.out.println(green+"Cadena de texto en verde"+reset); 
+       System.out.println(yellow+"Cadena de texto en amarillo"+reset); 
+       System.out.println(white+"Cadena de texto en white"+reset); 
+       System.out.println(black+"Cadena de texto en negro"+reset+" (<- cadena de texto en negro que no se ve porque mi fondo es negro)"+reset); 
+       System.out.println(blue+"Cadena de texto en azul"+reset); 
+       System.out.println(purple+"Cadena de texto en magenta"+reset); 
+       System.out.println(cyan+"Cadena de texto en cyan"+reset); 
+       System.out.println(reset+"Cadena de texto en color por defecto"+reset); 
+       System.out.println();
+     }
+    
+    public static String Colorear(String Texto, String Color )  {
         
+        String Resultado = "";
+        String black="\033[30m "; 
+        String red="\033[31m "; 
+        String green="\033[32m "; 
+        String yellow="\033[33m "; 
+        String blue="\033[34m "; 
+        String purple="\033[35m "; 
+        String cyan="\033[36m "; 
+        String white="\033[37m ";
+        String reset="\u001B[0m ";
+        
+        switch(Color)
+        {
+           case "Rojo" :
+              Resultado = red+Texto;
+           case "Negro" :
+              Resultado = black+Texto;
+           case "Verde" :
+              Resultado = green+Texto;
+        }
+        
+        return Resultado;
     }
 }
+
+
+
